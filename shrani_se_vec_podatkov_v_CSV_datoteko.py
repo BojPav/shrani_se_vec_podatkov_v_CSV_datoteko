@@ -28,9 +28,10 @@ for link in soup.findAll("a"):
 
         seznam_kontaktov.append(oseba)
 
-        csv_file.write(ime_priimek + " ; " + email + " ; " + kraj_bivanja + "\n")
+        csv_file.write(ime_priimek + "," + email + "," + kraj_bivanja + "\n")
 
 csv_file.close()
 
+print " "
 print "Scraping podatkov narejen...END"
 
